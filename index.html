@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elias Marlowe — Classical Guitarist & Composer</title>
+  <meta name="description" content="Classical guitarist and composer for weddings, concerts, private events and lessons." />
+  <meta name="theme-color" content="#0d0c0b" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Pinyon+Script&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Library styles -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader">
+    <div class="preloader__inner">
+      <span class="preloader__mark">EM</span>
+      <div class="preloader__strings">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <span class="preloader__count">0</span>
+      <div class="preloader__enter">
+        <button class="enter-btn" data-sound="on">
+          <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+          Enter with sound
+        </button>
+        <button class="enter-link" data-sound="off">Enter in silence</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Global FX layers ===== -->
+  <div class="grain" aria-hidden="true"></div>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===== Header ===== -->
+  <header class="header">
+    <a href="#top" class="logo" aria-label="Home">Elias Marlowe</a>
+
+    <nav class="nav" aria-label="Primary">
+      <ul class="nav__list">
+        <li class="nav__item has-sub">
+          <a href="#about">About</a>
+          <ul class="nav__sub">
+            <li><a href="#about">Biography</a></li>
+            <li><a href="#credentials">Training &amp; Honors</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#music">Music</a></li>
+        <li class="nav__item has-sub">
+          <a href="#weddings">Events</a>
+          <ul class="nav__sub">
+            <li><a href="#weddings">Weddings</a></li>
+            <li><a href="#occasions">Concerts &amp; Private Events</a></li>
+            <li><a href="#performances">Upcoming Performances</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a href="#lessons">Lessons</a></li>
+        <li class="nav__item"><a href="#publications">Publications</a></li>
+        <li class="nav__item has-sub">
+          <a href="#media">Media</a>
+          <ul class="nav__sub">
+            <li><a href="#media">Photos</a></li>
+            <li><a href="#video">Video</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <button class="sound-toggle" aria-label="Toggle ambient sound" aria-pressed="false">
+      <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound-toggle__label">Sound off</span>
+    </button>
+
+    <a href="#contact" class="btn btn--sm btn--gold magnetic header__cta">Book Now</a>
+
+    <button class="burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#weddings">Weddings</a></li>
+      <li><a href="#occasions">Events</a></li>
+      <li><a href="#lessons">Lessons</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#media">Media</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p class="mobile-menu__foot">hello@eliasmarlowe.com</p>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <canvas class="hero__strings" aria-hidden="true"></canvas>
+      <p class="hero__hint" aria-hidden="true">Move across the strings</p>
+      <div class="hero__media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=1800&h=1200&q=80" alt="" />
+      </div>
+      <div class="hero__vignette" aria-hidden="true"></div>
+
+      <div class="hero__content">
+        <p class="eyebrow hero__eyebrow">Classical Guitarist &amp; Composer</p>
+        <h1 class="hero__title">
+          <span class="script">Welcome to</span>
+          <span class="hero__name split">Elias Marlowe</span>
+        </h1>
+        <p class="hero__lede">Concert artist, wedding guitarist and educator — bringing world-class nylon-string performance to the moments that matter most.</p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--gold magnetic">Check Availability</a>
+          <a href="#music" class="btn btn--ghost magnetic">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Listen
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <span>Based in Phoenix, Arizona</span>
+        <span class="hero__divider"></span>
+        <span>Available Worldwide</span>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll down">
+        <span>Scroll</span>
+        <i></i>
+      </a>
+    </section>
+
+    <!-- ===== Marquee ===== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Weddings</span><em>✦</em><span>Concerts</span><em>✦</em><span>Recitals</span><em>✦</em><span>Corporate Events</span><em>✦</em><span>Private Lessons</span><em>✦</em><span>Masterclasses</span><em>✦</em>
+        <span>Weddings</span><em>✦</em><span>Concerts</span><em>✦</em><span>Recitals</span><em>✦</em><span>Corporate Events</span><em>✦</em><span>Private Lessons</span><em>✦</em><span>Masterclasses</span><em>✦</em>
+      </div>
+    </div>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about">
+      <div class="container about__grid">
+        <div class="about__media reveal-img">
+          <img src="https://images.unsplash.com/photo-1525201548942-d8732f6617a0?auto=format&fit=crop&w=900&h=1150&q=80" alt="Portrait of Elias Marlowe with guitar" loading="lazy" />
+          <div class="about__badge">
+            <span class="about__badge-num" data-count="20">0</span><span class="about__badge-plus">+</span>
+            <small>Years on stage</small>
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="eyebrow">Biography</p>
+          <h2 class="section-title split">A lifetime devoted to the <em>classical guitar</em></h2>
+          <p class="fade-up">Elias Marlowe has honed his craft under the guidance of renowned maestros around the world. His musical journey began at the conservatory, and his pursuit of excellence led him to study in Madrid, refining the Spanish tradition at its source.</p>
+          <p class="fade-up">He has since performed in concert halls, cathedrals, vineyards and private estates — and has taken part in masterclasses with some of the most celebrated guitarists of our time. Today he brings that same caliber of artistry to weddings, concerts, corporate events and the teaching studio.</p>
+          <div class="signature fade-up">Elias Marlowe</div>
+          <a href="#credentials" class="link-arrow fade-up">Training &amp; honors <span>→</span></a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="container stats">
+        <div class="stat"><span class="stat__num" data-count="450">0</span><span class="stat__suffix">+</span><p>Weddings performed</p></div>
+        <div class="stat"><span class="stat__num" data-count="120">0</span><span class="stat__suffix">+</span><p>Concerts &amp; recitals</p></div>
+        <div class="stat"><span class="stat__num" data-count="300">0</span><span class="stat__suffix">+</span><p>Students taught</p></div>
+        <div class="stat"><span class="stat__num" data-count="3">0</span><p>Albums released</p></div>
+      </div>
+    </section>
+
+    <!-- ===== Credentials / Timeline ===== -->
+    <section class="section credentials" id="credentials">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Training &amp; Honors</p>
+          <h2 class="section-title split">Shaped by the masters</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__line"><span></span></div>
+          <article class="timeline__item">
+            <span class="timeline__year">2004</span>
+            <h3>Conservatory of Music</h3>
+            <p>Bachelor of Music in Guitar Performance. First prize, National Young Artists Guitar Competition.</p>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2008</span>
+            <h3>Real Conservatorio, Madrid</h3>
+            <p>Advanced studies in the Spanish guitar tradition on a government cultural scholarship.</p>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">2012</span>
+            <h3>Master of Music</h3>
+            <p>Graduate study in performance and pedagogy at a leading U.S. school of music.</p>
+          </article>
+          <article class="timeline__item">
+            <span class="timeline__year">Today</span>
+            <h3>Concert Artist &amp; Educator</h3>
+            <p>Masterclasses with world-renowned guitarists; performing and teaching internationally.</p>
+          </article>
+        </div>
+
+        <div class="honors">
+          <div class="honor"><span class="honor__border" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="honor__glow" aria-hidden="true"></span><span class="honor__icon">✦</span><h4 data-text="1st Prize">1st Prize</h4><p>International Guitar Competition</p></div>
+          <div class="honor"><span class="honor__border" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="honor__glow" aria-hidden="true"></span><span class="honor__icon">✦</span><h4 data-text="Scholar">Scholar</h4><p>Cultural Cooperation Agency</p></div>
+          <div class="honor"><span class="honor__border" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="honor__glow" aria-hidden="true"></span><span class="honor__icon">✦</span><h4 data-text="Laureate">Laureate</h4><p>Young Artists Foundation</p></div>
+          <div class="honor"><span class="honor__border" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span class="honor__glow" aria-hidden="true"></span><span class="honor__icon">✦</span><h4 data-text="Featured">Featured</h4><p>Regional Arts Council Series</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Music ===== -->
+    <section class="section music" id="music">
+      <div class="container music__grid">
+        <div class="music__intro">
+          <p class="eyebrow">Music</p>
+          <h2 class="section-title split">Listen to the <em>repertoire</em></h2>
+          <p class="fade-up">From Tárrega and Albéniz to Bach, bossa nova and tasteful arrangements of modern favorites. Every piece can be tailored to your event.</p>
+          <div class="streaming fade-up">
+            <a href="#" class="chip">Spotify</a>
+            <a href="#" class="chip">Apple Music</a>
+            <a href="#" class="chip">YouTube</a>
+            <a href="#" class="chip">Bandcamp</a>
+          </div>
+        </div>
+
+        <div class="player tilt" data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.08">
+          <div class="player__top">
+            <div class="player__cover">
+              <img src="https://images.unsplash.com/photo-1622216209256-56db29568e38?auto=format&fit=crop&w=400&h=400&q=80" alt="Album cover" />
+              <div class="player__disc"></div>
+            </div>
+            <div class="player__now">
+              <small>Now playing</small>
+              <h3 class="player__title">Recuerdos de la Alhambra</h3>
+              <p class="player__artist">F. Tárrega</p>
+            </div>
+          </div>
+
+          <div class="player__wave" aria-hidden="true"></div>
+
+          <div class="player__bar">
+            <span class="player__time player__cur">0:00</span>
+            <div class="player__progress"><span></span></div>
+            <span class="player__time player__dur">0:00</span>
+          </div>
+
+          <div class="player__controls">
+            <button class="player__btn" data-action="prev" aria-label="Previous">
+              <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6 8.5 6V6z"/></svg>
+            </button>
+            <button class="player__btn player__btn--play" data-action="play" aria-label="Play">
+              <svg class="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              <svg class="i-pause" viewBox="0 0 24 24"><path d="M6 19h4V5H6zm8-14v14h4V5z"/></svg>
+            </button>
+            <button class="player__btn" data-action="next" aria-label="Next">
+              <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6zM16 6v12h2V6z"/></svg>
+            </button>
+          </div>
+
+          <!-- Replace data-src with real audio files, e.g. audio/recuerdos.mp3 -->
+          <ol class="tracklist">
+            <li class="track is-active" data-src="" data-duration="245"><span class="track__n">01</span><span class="track__t">Recuerdos de la Alhambra<small>F. Tárrega</small></span><span class="track__d">4:05</span></li>
+            <li class="track" data-src="" data-duration="312"><span class="track__n">02</span><span class="track__t">Asturias (Leyenda)<small>I. Albéniz</small></span><span class="track__d">5:12</span></li>
+            <li class="track" data-src="" data-duration="198"><span class="track__n">03</span><span class="track__t">Canon in D<small>J. Pachelbel, arr. Marlowe</small></span><span class="track__d">3:18</span></li>
+            <li class="track" data-src="" data-duration="226"><span class="track__n">04</span><span class="track__t">Jesu, Joy of Man's Desiring<small>J.S. Bach</small></span><span class="track__d">3:46</span></li>
+            <li class="track" data-src="" data-duration="187"><span class="track__n">05</span><span class="track__t">Romance Anónimo<small>Traditional</small></span><span class="track__d">3:07</span></li>
+          </ol>
+          <audio class="player__audio" preload="none"></audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Weddings ===== -->
+    <section class="section weddings" id="weddings">
+      <div class="weddings__bg parallax" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1800&h=1200&q=80" alt="" loading="lazy" />
+      </div>
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Weddings</p>
+          <h2 class="section-title split">Music for your <em>forever</em></h2>
+          <p class="section-lede fade-up">From the first step down the aisle to the last dance, every moment accompanied by the perfect soundtrack.</p>
+        </div>
+
+        <div class="cards cards--3">
+          <article class="card tilt" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-max-glare="0.12">
+            <span class="card__num">I</span>
+            <h3>Ceremony</h3>
+            <p>Graceful melodies for the prelude, processional, signing and recessional — each cue timed precisely to your moment.</p>
+            <ul class="card__list"><li>Prelude &amp; seating</li><li>Processional &amp; entrance</li><li>Recessional</li></ul>
+          </article>
+          <article class="card tilt" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-max-glare="0.12">
+            <span class="card__num">II</span>
+            <h3>Cocktail Hour</h3>
+            <p>An elegant, sophisticated atmosphere as guests mingle — classical, Spanish, bossa nova and acoustic favorites.</p>
+            <ul class="card__list"><li>Curated sets</li><li>Guest requests</li><li>Indoor or outdoor</li></ul>
+          </article>
+          <article class="card tilt" data-tilt data-tilt-max="6" data-tilt-glare="true" data-tilt-max-glare="0.12">
+            <span class="card__num">III</span>
+            <h3>Reception</h3>
+            <p>Live music during dinner that adds a touch of class and sets the stage for an unforgettable evening.</p>
+            <ul class="card__list"><li>Dinner ambiance</li><li>First-dance arrangement</li><li>Custom song arranging</li></ul>
+          </article>
+        </div>
+
+        <div class="why">
+          <h3 class="why__title split">Why choose Elias?</h3>
+          <div class="why__grid">
+            <div class="why__item fade-up"><h4>Experience</h4><p>Hundreds of weddings performed with glowing praise from couples and planners alike.</p></div>
+            <div class="why__item fade-up"><h4>Versatility</h4><p>A repertoire spanning classical, contemporary, jazz and popular hits — tailored to you.</p></div>
+            <div class="why__item fade-up"><h4>Passion</h4><p>Heartfelt performances that evoke emotion and create memories treasured for a lifetime.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Other occasions (horizontal scroll) ===== -->
+    <section class="occasions" id="occasions">
+      <div class="occasions__pin">
+        <div class="occasions__head">
+          <p class="eyebrow">Other Occasions</p>
+          <h2 class="section-title">Beyond <em>the aisle</em></h2>
+        </div>
+        <div class="occasions__track">
+          <article class="occasion">
+            <div class="occasion__img"><img src="https://images.unsplash.com/photo-1471478331149-c72f17e33c73?auto=format&fit=crop&w=900&h=1100&q=80" alt="" loading="lazy" /></div>
+            <div class="occasion__body"><span>01</span><h3>Concerts &amp; Recitals</h3><p>Solo programs and chamber collaborations that leave audiences spellbound.</p></div>
+          </article>
+          <article class="occasion">
+            <div class="occasion__img"><img src="https://images.unsplash.com/photo-1784202388218-82a9b7b2fe74?auto=format&fit=crop&w=900&h=1100&q=80" alt="" loading="lazy" /></div>
+            <div class="occasion__body"><span>02</span><h3>Private Events</h3><p>Anniversaries, dinner parties, memorials and milestone celebrations.</p></div>
+          </article>
+          <article class="occasion">
+            <div class="occasion__img"><img src="https://images.unsplash.com/photo-1536594527669-2f555de54e95?auto=format&fit=crop&w=900&h=1100&q=80" alt="" loading="lazy" /></div>
+            <div class="occasion__body"><span>03</span><h3>Corporate Functions</h3><p>Galas, conferences and client receptions with a refined, memorable tone.</p></div>
+          </article>
+          <article class="occasion">
+            <div class="occasion__img"><img src="https://images.unsplash.com/photo-1567401747741-cd21b3b251f6?auto=format&fit=crop&w=900&h=1100&q=80" alt="" loading="lazy" /></div>
+            <div class="occasion__body"><span>04</span><h3>Workshops &amp; Masterclasses</h3><p>Sessions for schools, guitar societies and festivals at every level.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Upcoming performances ===== -->
+    <section class="section performances" id="performances">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Calendar</p>
+          <h2 class="section-title split">Upcoming performances</h2>
+        </div>
+        <ul class="gigs">
+          <li class="gig fade-up">
+            <time class="gig__date"><b>14</b><span>Nov</span></time>
+            <div class="gig__info"><h3>Solo Recital: Música de España</h3><p>Musical Instrument Museum · Phoenix, AZ</p></div>
+            <a href="#" class="btn btn--sm btn--ghost">Tickets</a>
+          </li>
+          <li class="gig fade-up">
+            <time class="gig__date"><b>02</b><span>Dec</span></time>
+            <div class="gig__info"><h3>Candlelight Holiday Concert</h3><p>St. Mary's Basilica · Phoenix, AZ</p></div>
+            <a href="#" class="btn btn--sm btn--ghost">Tickets</a>
+          </li>
+          <li class="gig fade-up">
+            <time class="gig__date"><b>18</b><span>Jan</span></time>
+            <div class="gig__info"><h3>Guitar Society Masterclass</h3><p>University School of Music · Tempe, AZ</p></div>
+            <a href="#" class="btn btn--sm btn--ghost">Details</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Lessons ===== -->
+    <section class="section lessons" id="lessons">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Lessons</p>
+          <h2 class="section-title split">Study with a <em>concert artist</em></h2>
+          <p class="section-lede fade-up">Private instruction for beginners through conservatory-bound players — in studio or online.</p>
+        </div>
+
+        <div class="pricing">
+          <article class="price fade-up">
+            <h3>Trial Lesson</h3>
+            <p class="price__amt"><sup>$</sup>45<small>/ 30 min</small></p>
+            <ul><li>Skill assessment</li><li>Personal learning plan</li><li>In studio or online</li></ul>
+            <a href="#contact" class="btn btn--ghost btn--block">Book a trial</a>
+          </article>
+          <article class="price price--featured fade-up">
+            <span class="price__tag">Most popular</span>
+            <h3>Monthly Study</h3>
+            <p class="price__amt"><sup>$</sup>260<small>/ month</small></p>
+            <ul><li>Four 60-minute lessons</li><li>Technique &amp; repertoire</li><li>Custom arrangements &amp; materials</li><li>Recital opportunities</li></ul>
+            <a href="#contact" class="btn btn--gold btn--block">Enroll now</a>
+          </article>
+          <article class="price fade-up">
+            <h3>Audition Prep</h3>
+            <p class="price__amt"><sup>$</sup>90<small>/ 60 min</small></p>
+            <ul><li>Conservatory &amp; competition prep</li><li>Mock auditions</li><li>Performance coaching</li></ul>
+            <a href="#contact" class="btn btn--ghost btn--block">Inquire</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Publications ===== -->
+    <section class="section publications" id="publications">
+      <div class="container">
+        <div class="section-head section-head--split">
+          <div>
+            <p class="eyebrow">Publications</p>
+            <h2 class="section-title split">Scores &amp; <em>arrangements</em></h2>
+          </div>
+          <p class="fade-up">Original compositions, wedding arrangements and teaching editions — available as digital downloads.</p>
+        </div>
+
+        <div class="books">
+          <article class="book fade-up">
+            <div class="book__cover book__cover--a"><span>Wedding<br/>Collection</span><small>Vol. I</small></div>
+            <h3>The Wedding Guitar Collection</h3><p>12 ceremony favorites · Intermediate</p><a href="#" class="link-arrow">View <span>→</span></a>
+          </article>
+          <article class="book fade-up">
+            <div class="book__cover book__cover--b"><span>Études<br/>Nocturnes</span><small>Op. 7</small></div>
+            <h3>Six Nocturnal Études</h3><p>Original compositions · Advanced</p><a href="#" class="link-arrow">View <span>→</span></a>
+          </article>
+          <article class="book fade-up">
+            <div class="book__cover book__cover--c"><span>First<br/>Steps</span><small>Method</small></div>
+            <h3>First Steps in Classical Guitar</h3><p>Method book · Beginner</p><a href="#" class="link-arrow">View <span>→</span></a>
+          </article>
+          <article class="book fade-up">
+            <div class="book__cover book__cover--d"><span>Latin<br/>Suite</span><small>Arr.</small></div>
+            <h3>Suite Latinoamericana</h3><p>Arrangements · Intermediate–Advanced</p><a href="#" class="link-arrow">View <span>→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Media: Photos ===== -->
+    <section class="section media" id="media">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Media</p>
+          <h2 class="section-title split">Photo gallery</h2>
+        </div>
+        <div class="gallery">
+          <a href="https://images.unsplash.com/photo-1547357812-4a336d835928?auto=format&fit=crop&w=1600&h=1100&q=80" class="gallery__item g-tall glightbox" data-gallery="photos"><img src="https://images.unsplash.com/photo-1547357812-4a336d835928?auto=format&fit=crop&w=700&h=1000&q=80" alt="" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1528553744039-c1dcef33574f?auto=format&fit=crop&w=1600&h=1100&q=80" class="gallery__item glightbox" data-gallery="photos"><img src="https://images.unsplash.com/photo-1528553744039-c1dcef33574f?auto=format&fit=crop&w=800&h=600&q=80" alt="" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1673627133930-57f3f87e7c00?auto=format&fit=crop&w=1600&h=1100&q=80" class="gallery__item g-wide glightbox" data-gallery="photos"><img src="https://images.unsplash.com/photo-1673627133930-57f3f87e7c00?auto=format&fit=crop&w=1200&h=600&q=80" alt="" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1575032996422-68b9efa1d603?auto=format&fit=crop&w=1600&h=1100&q=80" class="gallery__item glightbox" data-gallery="photos"><img src="https://images.unsplash.com/photo-1575032996422-68b9efa1d603?auto=format&fit=crop&w=800&h=600&q=80" alt="" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1536047852989-10896cf70749?auto=format&fit=crop&w=1600&h=1100&q=80" class="gallery__item g-tall glightbox" data-gallery="photos"><img src="https://images.unsplash.com/photo-1536047852989-10896cf70749?auto=format&fit=crop&w=700&h=1000&q=80" alt="" loading="lazy" /></a>
+          <a href="https://images.unsplash.com/photo-1651346711179-717d96120eb8?auto=format&fit=crop&w=1600&h=1100&q=80" class="gallery__item glightbox" data-gallery="photos"><img src="https://images.unsplash.com/photo-1651346711179-717d96120eb8?auto=format&fit=crop&w=800&h=600&q=80" alt="" loading="lazy" /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Media: Video ===== -->
+    <section class="section video" id="video">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Video</p>
+          <h2 class="section-title split">See him <em>perform</em></h2>
+        </div>
+        <!-- Replace href with the musician's YouTube / Vimeo link -->
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="video__feature glightbox" data-gallery="video">
+          <img src="https://images.unsplash.com/photo-1683822091468-05dc60755de1?auto=format&fit=crop&w=1600&h=900&q=80" alt="Performance video" loading="lazy" />
+          <span class="video__play magnetic"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+          <span class="video__label">Live at the Concert Hall — Asturias</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <p class="eyebrow">Reviews</p>
+          <h2 class="section-title split">Kind words</h2>
+        </div>
+        <div class="swiper testimonial-swiper">
+          <div class="swiper-wrapper">
+            <blockquote class="swiper-slide quote">
+              <div class="quote__stars">★★★★★</div>
+              <p>"Elias made our ceremony feel like a film. Guests are still asking who the guitarist was — absolutely breathtaking."</p>
+              <footer><b>Sarah &amp; Daniel</b><span>Wedding · Scottsdale</span></footer>
+            </blockquote>
+            <blockquote class="swiper-slide quote">
+              <div class="quote__stars">★★★★★</div>
+              <p>"Professional from first email to final note. He learned our first-dance song and arranged it beautifully."</p>
+              <footer><b>Priya M.</b><span>Wedding · Sedona</span></footer>
+            </blockquote>
+            <blockquote class="swiper-slide quote">
+              <div class="quote__stars">★★★★★</div>
+              <p>"Our clients loved the atmosphere at the gala. Elegant, punctual and an absolute pleasure to work with."</p>
+              <footer><b>Mark T.</b><span>Corporate Event Planner</span></footer>
+            </blockquote>
+            <blockquote class="swiper-slide quote">
+              <div class="quote__stars">★★★★★</div>
+              <p>"A patient, inspiring teacher. My son was accepted to his first-choice conservatory after a year of lessons."</p>
+              <footer><b>Laura K.</b><span>Parent of student</span></footer>
+            </blockquote>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container faq__grid">
+        <div>
+          <p class="eyebrow">FAQ</p>
+          <h2 class="section-title split">Good to <em>know</em></h2>
+          <p class="fade-up">Can't find your answer? <a href="#contact" class="underline">Send a message</a>.</p>
+        </div>
+        <div class="accordion">
+          <details class="acc" open>
+            <summary>How far in advance should we book?<i></i></summary>
+            <div class="acc__body"><p>Most couples book 6–12 months ahead. Spring and fall weekends fill quickly, so reach out early to secure your date.</p></div>
+          </details>
+          <details class="acc">
+            <summary>Can you learn a song that isn't in your repertoire?<i></i></summary>
+            <div class="acc__body"><p>Yes. Custom arrangements of special songs are available and can usually be prepared within a few weeks.</p></div>
+          </details>
+          <details class="acc">
+            <summary>Do you provide your own sound equipment?<i></i></summary>
+            <div class="acc__body"><p>A professional, discreet PA system and wireless microphone for the officiant are available for most venues.</p></div>
+          </details>
+          <details class="acc">
+            <summary>Do you travel outside Arizona?<i></i></summary>
+            <div class="acc__body"><p>Absolutely — destination weddings and touring concerts are welcome. Travel fees vary by location.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title split">Let's make it <em>unforgettable</em></h2>
+          <p class="fade-up">Tell me about your date, venue and vision. I respond to every inquiry within 24 hours.</p>
+          <ul class="contact__list fade-up">
+            <li><small>Email</small><a href="mailto:hello@eliasmarlowe.com">hello@eliasmarlowe.com</a></li>
+            <li><small>Phone</small><a href="tel:+16025550123">(602) 555-0123</a></li>
+            <li><small>Studio</small><span>Phoenix, Arizona</span></li>
+          </ul>
+          <div class="socials fade-up">
+            <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="YouTube">YT</a><a href="#" aria-label="Facebook">FB</a><a href="#" aria-label="Spotify">SP</a>
+          </div>
+        </div>
+
+        <!-- Hook up to Formspree / Netlify Forms / your backend by setting action="" -->
+        <form class="form" action="#" method="post" novalidate>
+          <div class="form__row">
+            <label class="field"><input type="text" name="name" placeholder=" " required /><span>Your name</span></label>
+            <label class="field"><input type="email" name="email" placeholder=" " required /><span>Email</span></label>
+          </div>
+          <div class="form__row">
+            <label class="field field--select">
+              <select name="event" required>
+                <option value="" disabled selected hidden></option>
+                <option>Wedding</option><option>Private Event</option><option>Corporate Function</option><option>Concert / Recital</option><option>Lessons</option><option>Other</option>
+              </select>
+              <span>Event type</span>
+            </label>
+            <label class="field"><input type="date" name="date" placeholder=" " /><span class="field__fixed">Event date</span></label>
+          </div>
+          <label class="field"><input type="text" name="venue" placeholder=" " /><span>Venue / location</span></label>
+          <label class="field"><textarea name="message" rows="4" placeholder=" " required></textarea><span>Tell me about your event</span></label>
+          <button type="submit" class="btn btn--gold btn--block magnetic">Send Inquiry</button>
+          <p class="form__status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__big split">Elias Marlowe</div>
+      <div class="footer__row">
+        <p>Classical Guitarist &amp; Composer · Phoenix, Arizona</p>
+        <nav class="footer__nav">
+          <a href="#about">About</a><a href="#weddings">Weddings</a><a href="#lessons">Lessons</a><a href="#media">Media</a><a href="#contact">Contact</a>
+        </nav>
+        <p>© <span class="year"></span> Elias Marlowe. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Libraries ===== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/split-type@0.3.4/umd/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+  <script src="js/sound.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
