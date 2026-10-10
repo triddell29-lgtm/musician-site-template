@@ -19,7 +19,9 @@ Hero (interactive guitar strings) · Marquee · About + stats · Training & Hono
 | GLightbox 3.3.0 | Photo and video lightbox |
 | Vanilla-Tilt 1.8.1 | 3D tilt on cards and the player |
 
-Built-in effects: a canvas of guitar strings that pluck when the mouse crosses them, film grain, a custom cursor, magnetic buttons, a scroll progress bar, and a header that hides on scroll. If the visitor has turned on reduced motion, the animations are switched off.
+Built-in effects: an intro screen that lets visitors enter with or without sound, a generated ambient soundtrack (Web Audio, no files needed) with a header on/off toggle, six hero guitar strings that play plucked notes in tune with the background chords when the mouse or a finger crosses them, honors boxes that draw their own borders and decode their titles, a slow continuous marquee, film grain, magnetic buttons, a scroll progress bar, and a header that hides on scroll. If the visitor has turned on reduced motion, the animations are switched off.
+
+Sound lives in `js/sound.js`: change the chord progression in `CHORDS` and the pace in `CHORD_LEN`.
 
 ## Customizing for the client
 1. **Name**: find and replace `Elias Marlowe` (and `EM` in the preloader).
